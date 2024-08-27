@@ -10,7 +10,7 @@ import {
   Transaction,
   TransactionBuilder,
   xdr
-} from 'stellar-sdk';
+} from '@lantah/lantah-sdk';
 
 import BigNumber from 'bignumber.js';
 import { set } from './utils';
@@ -448,7 +448,7 @@ function toAsset(value: string): Asset {
     return undefined;
   }
 
-  if (value === 'XLM') {
+  if (value === 'GRAM') {
     return Asset.native();
   }
 

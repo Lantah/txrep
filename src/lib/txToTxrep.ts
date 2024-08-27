@@ -7,7 +7,7 @@ import {
   StrKey,
   Transaction,
   xdr
-} from 'stellar-sdk';
+} from '@lantah/lantah-sdk';
 
 import BigNumber from 'bignumber.js';
 import { best_r, upperSnakeCase } from './utils';
@@ -341,7 +341,7 @@ function addSignature(
 
 function toAsset(asset: Asset) {
   if (asset.isNative()) {
-    return 'XLM';
+    return 'GRAM';
   }
 
   return `${asset.code}:${asset.issuer}`;
